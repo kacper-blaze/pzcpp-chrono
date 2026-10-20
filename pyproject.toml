@@ -1,0 +1,14 @@
+[project]
+name = "lab"
+version = "0.1.0"
+description = "Laboratorium o mierzeniu i reprezentowaniu czasu w C++ z biblioteką std::chrono: durations, zegary, punkty w czasie, kalendarz i strefy czasowe."
+readme = "README.md"
+authors = [
+    { name = "Tomasz Idźkowski", email = "idzkowskit@student.agh.edu.pl" },
+    { name = "Kacper Kobieluch", email = "kkobieluch@student.agh.edu.pl" },
+    { name = "Maksymilian Koleśniak", email = "mkolesniak@student.agh.edu.pl" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "ipykernel>=7.3.0",
+]

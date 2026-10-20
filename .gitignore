@@ -1,0 +1,17 @@
+# Reference solutions and private quiz material
+private/
+
+# Build output
+build/
+cmake-build-*/
+_deps/
+
+# Jupyter / Python
+.ipynb_checkpoints/
+.venv
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
