@@ -10,12 +10,34 @@ Laboratorium o mierzeniu i reprezentowaniu czasu w C++ z biblioteką std::chrono
 
 ## Jak zacząć
 
+### 1. Kompilator C++20 i CMake
+
+Minimalne wersje: GCC 11.2 albo Clang 14, Visual Studio 2022 17.0, CMake 3.22
+(szczegóły i uzasadnienie — w `lab/_start.ipynb`).
+
+- **Ubuntu / Debian / WSL** (Ubuntu 22.04 lub nowszy):
+  ```bash
+  sudo apt install g++ cmake
+  ```
+- **Windows**: najprościej przez WSL z Ubuntu (jak wyżej). Alternatywnie Visual Studio 2022
+  z pakietem *Desktop development with C++* (zawiera CMake); notebooki uruchamiaj
+  wtedy z „Developer PowerShell for VS 2022”, żeby `cmake` widział kompilator.
+- **macOS**: Xcode Command Line Tools i CMake (np. `brew install cmake`) — konfiguracja niesprawdzana.
+
+Notebook `05_extras` (formatowanie dat, strefy czasowe) wymaga GCC 13+ albo Visual Studio 2022 17.2+;
+pozostałe działają na wersjach minimalnych.
+
+### 2. Python i JupyterLab
+
+Środowiskiem Pythona zarządza [uv](https://docs.astral.sh/uv/getting-started/installation/). Po jego instalacji,
+w katalogu repozytorium:
+
 ```bash
 uv sync
-uv run --with jupyterlab jupyter lab lab/_start.ipynb
+uv run --with "jupyterlab>=4" jupyter lab lab/_start.ipynb
 ```
 
-Szczegółowa instrukcja instalacji — w przygotowaniu.
+Pierwsza kompilacja ćwiczenia pobiera GoogleTest (raz, do `lab/_deps`) — potrzebny jest wtedy dostęp do internetu.
 
 ## Autorzy
 
