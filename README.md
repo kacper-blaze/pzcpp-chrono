@@ -4,7 +4,7 @@ Laboratorium o mierzeniu i reprezentowaniu czasu w C++ z biblioteką std::chrono
 
 ## Struktura
 
-- `lab/` — notebooki JupyterLab z materiałami i ćwiczeniami; zacznij od `lab/_start.ipynb`
+- `lab/` — notebooki JupyterLab z materiałami i ćwiczeniami; zacznij od [`lab/_start.ipynb`](lab/_start.ipynb)
   - `lab/cmake/lab.cmake` — wspólne ustawienia CMake (C++20, GoogleTest)
 - `pyproject.toml` — środowisko Pythona dla notebooków (zarządzane przez [uv](https://docs.astral.sh/uv/))
 
@@ -13,7 +13,7 @@ Laboratorium o mierzeniu i reprezentowaniu czasu w C++ z biblioteką std::chrono
 ### 1. Kompilator C++20 i CMake
 
 Minimalne wersje: GCC 11.2 albo Clang 14, Visual Studio 2022 17.0, CMake 3.22
-(szczegóły i uzasadnienie — w `lab/_start.ipynb`).
+(szczegóły i uzasadnienie — w [`lab/_start.ipynb`](lab/_start.ipynb)).
 
 - **Ubuntu / Debian / WSL** (Ubuntu 22.04 lub nowszy):
   ```bash
